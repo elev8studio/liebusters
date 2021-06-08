@@ -72,49 +72,59 @@
             <section class="relative">
                 <!-- Desktop banner -->
                 <picture>
-                    <source srcset="assets/images/banner1.webp" type="image/webp" />
-                    <source srcset="assets/images/banner1.jpg" type="image/png" />
+                    <source srcset="assets/images/banner-desktop.webp" type="image/webp" />
+                    <source srcset="assets/images/banner-desktop.jpg" type="image/png" />
                     <img
-                        src="assets/images/banner1.jpg"
+                        src="assets/images/banner-desktop.jpg"
                         alt="Liebusters logo"
                         class="absolute inset-0 hidden lg:block object-cover w-full h-full"
                     />
                 </picture>
-                <!-- Mobile banner -->
+                <!-- Tablet banner -->
                 <picture>
-                    <source srcset="assets/images/banner2.webp" type="image/webp" />
-                    <source srcset="assets/images/banner2.jpg" type="image/png" />
+                    <source srcset="assets/images/banner-tablet.webp" type="image/webp" />
+                    <source srcset="assets/images/banner-tablet.jpg" type="image/png" />
                     <img
-                        src="assets/images/banner2.jpg"
-                        alt="Liebusters logo"
-                        class="absolute inset-0 lg:hidden object-cover object-left w-full h-full"
+                            src="assets/images/banner-tablet.jpg"
+                            alt="Liebusters logo"
+                            class="absolute inset-0 hidden sm:block lg:hidden object-cover object-left w-full h-full"
                     />
                 </picture>
-                <div class="relative h-full flex md:justify-end lg:justify-start">
+                <!-- Mobile banner -->
+                <picture>
+                    <source srcset="assets/images/banner-mobile.webp" type="image/webp" />
+                    <source srcset="assets/images/banner-mobile.jpg" type="image/png" />
+                    <img
+                        src="assets/images/banner-mobile.jpg"
+                        alt="Liebusters logo"
+                        class="absolute inset-0 block sm:hidden object-cover object-left w-full h-full"
+                    />
+                </picture>
+                <div class="relative h-full flex sm:justify-end lg:justify-start">
                     <div
                         class="
                             flex flex-col
-                            justify-center
-                            md:w-1/2
+                            justify-start
+                            sm:justify-center
+                            sm:w-1/2
                             lg:w-5/12
                             py-4
-                            md:py-12
+                            sm:py-12
                             lg:py-20
                             pl-8
-                            md:pl-12
+                            sm:pl-12
                             lg:pl-24
                             pr-8
-                            md:pr-24
+                            sm:pr-12
                             lg:pr-0
                             text-white
-                            md:text-black
                             lg:text-white
                             pb-72
                         "
                     >
                         <h1>HI! WE’RE JONATHAN & HELENA CAVAN</h1>
                         <h3>We want to help you get spiritually and emotionally unblocked</h3>
-                        <h2 class="italic md:self-end md:w-1/2 md:text-right pt-0 md:pb-0">
+                        <h2 class="italic sm:self-end md:w-1/2 md:text-right pt-0 md:pb-0">
                             ...and have fun doing it!
                         </h2>
                     </div>
@@ -131,18 +141,6 @@
                             Join the <strong>free</strong> Glo Course Today
                         </a>
                     </h3>
-                </div>
-            </section>
-            <section>
-                <div class="p-8 max-w-4xl m-auto">
-                    <p class="uppercase text-center p-4">Partners & Clients</p>
-                    <hr class="h-0.5 bg-gold border-none" />
-                    <div class="flex gap-4 flex-wrap justify-center p-4">
-                        <img src="assets/images/bethel.png" alt="Bethel Music logo" class="h-24 w-auto" />
-                        <img src="assets/images/chroma.png" alt="Chroma Church logo" class="h-24 w-auto" />
-                        <img src="assets/images/eastgate.png" alt="Eastgate Church logo" class="h-24 w-auto" />
-                        <img src="assets/images/davids-tent.png" alt="David's Tent logo" class="h-24 w-auto" />
-                    </div>
                 </div>
             </section>
             <section class="relative">
@@ -184,18 +182,30 @@
                     </div>
                 </div>
             </section>
-            <section class="relative">
-                <div class="bg-purple">
-                    <img
-                        src="assets/images/purple-feathers.png"
-                        alt="Purple feathers"
-                        class="absolute inset-0 object-contain w-full h-full"
-                    />
-                    <div class="relative py-12 px-8 md:py-20 text-white flex justify-center">
-                        <h2 class="max-w-4xl text-center">
-                            Our proven, compassion led approach combined with fun and community has reached thousands of
-                            people, allowing them to get free, stay free and help set others free.
-                        </h2>
+            <section>
+                <div
+                        class="
+                        py-12
+                        px-8
+                        md:p-16
+                        bg-purple
+                        flex flex-col
+                        justify-center
+                        items-center
+                        text-center text-white
+                    "
+                >
+                    <div class="max-w-4xl">
+                        <h1 class="uppercase pb-0">What is Liebusting?</h1>
+                        <h4>
+                            <span class="pb-4 lg:pb-0 block"
+                            >Liebusting is the most powerful
+                                <span class="uppercase font-bold">total freedom</span> tool available today!</span
+                            >
+                            It’s fast, simple and gentle. It can be applied one on one, one to many and to
+                            organisations, situations and locations. Each session takes 60 to 90 minutes and can be done
+                            in person but usually online.
+                        </h4>
                     </div>
                 </div>
             </section>
@@ -275,30 +285,18 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div
-                    class="
-                        py-12
-                        px-8
-                        md:p-16
-                        bg-purple
-                        flex flex-col
-                        justify-center
-                        items-center
-                        text-center text-white
-                    "
-                >
-                    <div class="max-w-4xl">
-                        <h1 class="uppercase pb-0">What is Liebusting?</h1>
-                        <h4>
-                            <span class="pb-4 lg:pb-0 block"
-                                >Liebusting is the most powerful
-                                <span class="uppercase font-bold">total freedom</span> tool available today!</span
-                            >
-                            It’s fast, simple and gentle. It can be applied one on one, one to many and to
-                            organisations, situations and locations. Each session takes 60 to 90 minutes and can be done
-                            in person but usually online.
-                        </h4>
+            <section class="relative">
+                <div class="bg-purple">
+                    <img
+                            src="assets/images/purple-feathers.png"
+                            alt="Purple feathers"
+                            class="absolute inset-0 object-contain w-full h-full"
+                    />
+                    <div class="relative py-12 px-8 md:py-20 text-white flex justify-center">
+                        <h2 class="max-w-4xl text-center">
+                            Our proven, compassion led approach combined with fun and community has reached thousands of
+                            people, allowing them to get free, stay free and help set others free.
+                        </h2>
                     </div>
                 </div>
             </section>
@@ -314,7 +312,7 @@
                         text-center text-white
                     "
                 >
-                    <picture class="lg:w-5/12 self-end">
+                    <picture class="lg:w-6/12 self-end">
                         <source srcset="assets/images/founders.webp" type="image/webp" />
                         <source srcset="assets/images/founders.png" type="image/png" />
                         <img
@@ -323,7 +321,7 @@
                             class="self-end justify-self-start"
                         />
                     </picture>
-                    <div class="lg:w-6/12 text-purple relative py-12 px-8 pb-4 lg:p-16 lg:pl-8">
+                    <div class="lg:w-6/12 text-purple relative py-12 px-8 pb-0 lg:p-16 lg:pl-8">
                         <h1 class="uppercase pb-0">Meet the Founders</h1>
                         <h4>
                             Jonathan and Helena Cavan founded Liebusters in 2013 after 17 years of marital struggles
@@ -374,6 +372,18 @@
                             >
                         </a>
                     </h3>
+                </div>
+            </section>
+            <section>
+                <div class="p-8 max-w-4xl m-auto">
+                    <p class="uppercase text-center p-4">Partners & Clients</p>
+                    <hr class="h-0.5 bg-gold border-none" />
+                    <div class="flex gap-4 flex-wrap justify-center p-4">
+                        <img src="assets/images/bethel.png" alt="Bethel Music logo" class="h-24 w-auto" />
+                        <img src="assets/images/chroma.png" alt="Chroma Church logo" class="h-24 w-auto" />
+                        <img src="assets/images/eastgate.png" alt="Eastgate Church logo" class="h-24 w-auto" />
+                        <img src="assets/images/davids-tent.png" alt="David's Tent logo" class="h-24 w-auto" />
+                    </div>
                 </div>
             </section>
             <section>
