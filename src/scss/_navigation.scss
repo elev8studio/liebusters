@@ -1,0 +1,62 @@
+@import "variables";
+
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+
+.burger-container {
+    transition: all 0.3s $cubic;
+    transform: rotate(0deg);
+    -webkit-tap-highlight-color: transparent;
+    top: 2px;
+
+    .burger-bar {
+        height: 3px;
+        transition: all 0.3s $cubic;
+
+        @apply block relative bg-black;
+
+        &.topBar {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        &.midBar {
+            transform: translateY(6px) rotate(0deg);
+        }
+
+        &.btmBar {
+            transform: translateY(12px) rotate(0deg);
+        }
+    }
+}
+
+.navigation-open {
+
+    nav {
+        background-blend-mode: darken;
+
+        @apply inset-0 w-full h-full bg-white absolute z-40 visible;
+
+        ul {
+            @apply flex-col justify-center items-center h-full;
+        }
+    }
+
+    .burger-container {
+        @apply z-50;
+        .burger-bar {
+            transition: all 0.4s $cubic;
+
+            &.topBar {
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            &.midBar {
+                @apply opacity-0;
+            }
+
+            &.btmBar {
+                transform: translateY(3px) rotate(-45deg);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,71 @@
+@import 'mixins';
+@import 'functions';
+@import 'variables';
+
+h1,
+h2,
+h3,
+h4,
+p,
+i,
+a,
+li,
+td {
+	margin: 0;
+	padding: 0.5rem 0;
+}
+
+$h1: 30px;
+$h2: 2.2rem;
+$h3: 1.8rem;
+$h4: 1.8rem;
+$body1: 1.8rem;
+$body2: 1.6rem;
+$button: 1.8rem;
+$caption: 1.4rem;
+$quote: 2.5rem;
+
+h1 {
+	@include fluid-type(30px, 45px);
+	line-height: 1.4;
+	font-weight: 600;
+}
+
+h1.heading {
+	@include fluid-type(25px, 40px);
+	font-weight: 600;
+}
+
+h2 {
+	@include fluid-type(25px, 32px);
+	font-weight: 500;
+}
+
+h3 {
+	@include fluid-type(20px, 27px);
+	font-weight: 500;
+}
+
+h4 {
+	@include fluid-type(18px, 24px);
+	font-weight: 500;
+}
+
+p, .body {
+	@include fluid-type(17px, 19px);
+	font-weight: 500;
+}
+
+.caption,
+.caption p {
+	@include fluid-type(15px, 17px);
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+
+	&:hover {
+		color: $gold;
+	}
+}
