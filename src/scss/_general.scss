@@ -1,0 +1,9 @@
+@import "mixins";
+
+.jenn-photo {
+    min-height: 50rem;
+
+    @screen md {
+        min-height: 60rem;
+    }
+}

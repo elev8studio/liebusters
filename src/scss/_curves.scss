@@ -1,0 +1,30 @@
+.curve-section::before {
+    content: " ";
+    @apply z-50 absolute w-full h-full bg-no-repeat;
+}
+
+.curve-section-1::before {
+    background-image: url(/assets/vectors/curve-1.svg);
+    @apply bg-bottom top-2;
+}
+
+.curve-section-2::before {
+    background-image: url(/assets/vectors/curve-2.svg);
+    @apply bg-bottom;
+}
+
+.curve-section-3::before {
+    background-image: url(/assets/vectors/curve-3.svg);
+    @apply bg-top bottom-2 md:bottom-4;
+}
+
+//.curve-section-4::after {
+//    background-image: url(/assets/vectors/curve-4.svg);
+//    content: " ";
+//    @apply bg-top z-50 absolute w-full h-full bg-no-repeat;
+//}
+
+.curve-section-5::before {
+    background-image: url(/assets/vectors/curve-5.svg);
+    @apply bg-bottom;
+}

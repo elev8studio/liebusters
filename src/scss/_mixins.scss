@@ -2,8 +2,8 @@
  * Media Query Mixins
  */
 
-$small: 650px;
-$medium: 960px;
+$small: 768px;
+$medium: 1024px;
 $wide: 1280px;
 
 @mixin narrow {
