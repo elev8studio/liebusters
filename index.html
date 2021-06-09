@@ -144,36 +144,38 @@
                 </div>
             </section>
             <section class="relative">
+                <!-- Only show on larger devices -->
                 <picture>
                     <source srcset="assets/images/yellow.webp" type="image/webp" />
                     <source srcset="assets/images/yellow.jpg" type="image/jpeg" />
                     <img
                         src="assets/images/yellow.jpg"
                         alt="Yellow background with person"
-                        class="absolute inset-0 object-cover w-full h-full object-right-top"
+                        class="absolute inset-0 hidden md:block object-cover w-full h-full object-top"
                     />
                 </picture>
-                <div class="relative py-12 px-8 md:p-16 flex justify-end">
-                    <div class="md:max-w-2xl xl:max-w-3xl text-purple flex flex-col sm:px-20">
+                <!-- End show on larger devices -->
+                <div class="relative pt-12 md:py-12 px-8 md:p-16 flex justify-end bg-yellow md:bg-clear">
+                    <div class="md:max-w-md lg:max-w-lg xl:max-w-2xl xl:pl-20 text-purple flex flex-col">
                         <h1 class="uppercase heading pb-4">Does this sound like you?</h1>
                         <ul class="xl:pr-20">
-                            <li class="flex items-start p-0">
+                            <li class="flex items-center p-0">
                                 <img src="assets/images/tick.png" alt="Purple checkmark" class="w-8 h-8 my-3 mr-3" />
                                 <h4>Are you trying your best but continue to self sabotage?</h4>
                             </li>
-                            <li class="flex items-start p-0">
+                            <li class="flex items-center p-0">
                                 <img src="assets/images/tick.png" alt="Purple checkmark" class="w-8 h-8 my-3 mr-3" />
                                 <h4>Do you ever experience feelings of fear, rejection or isolation?</h4>
                             </li>
-                            <li class="flex items-start p-0">
+                            <li class="flex items-center p-0">
                                 <img src="assets/images/tick.png" alt="Purple checkmark" class="w-8 h-8 my-3 mr-3" />
                                 <h4>Are you tired of feeling stuck?</h4>
                             </li>
-                            <li class="flex items-start p-0">
+                            <li class="flex items-center p-0">
                                 <img src="assets/images/tick.png" alt="Purple checkmark" class="w-8 h-8 my-3 mr-3" />
                                 <h4>Deep down do you crave love and acceptance?</h4>
                             </li>
-                            <li class="flex items-start p-0">
+                            <li class="flex items-center p-0">
                                 <img src="assets/images/tick.png" alt="Purple checkmark" class="w-8 h-8 my-3 mr-3" />
                                 <h4>Do you believe there’s a way forward but it seems just out of reach?</h4>
                             </li>
@@ -181,6 +183,17 @@
                         <h3 class="text-right italic w-1/2 self-end">If yes... then you are in the right place!</h3>
                     </div>
                 </div>
+                <!-- Only show on smaller devices -->
+                <picture>
+                    <source srcset="assets/images/yellow-mobile.webp" type="image/webp" />
+                    <source srcset="assets/images/yellow-mobile.jpg" type="image/jpeg" />
+                    <img
+                            src="assets/images/yellow-mobile.jpg"
+                            alt="Yellow background with person"
+                            class="block md:hidden object-cover w-full h-full"
+                    />
+                </picture>
+                <!-- End show on smaller devices -->
             </section>
             <section>
                 <div
